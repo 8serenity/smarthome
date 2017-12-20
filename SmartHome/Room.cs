@@ -11,6 +11,14 @@ namespace SmartHome
         public string Name { get; set; }
         public int CounterRoom { get; set; }
         public List<Actuator> ActuatorList { get; set; }
-        
+
+        public Room()
+        {
+            Console.WriteLine("Введите название комнаты: ");
+
+            string tempName = Console.ReadLine();
+
+            Name = tempName;
+        }
     }
 }

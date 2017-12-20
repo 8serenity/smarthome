@@ -23,5 +23,14 @@ namespace SmartHome
                 IsOn = false;
             }
         }
+
+        public Device()
+        {
+            Console.Write("Введите название устройства: ");
+
+            string tempName = Console.ReadLine();
+
+            Name = tempName;
+        }
     }
 }

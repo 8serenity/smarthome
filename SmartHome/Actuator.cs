@@ -21,5 +21,12 @@ namespace SmartHome
                 ConnectedDevices[i].SwitchOnOff();
             }
         }
+
+        public void AddDevice()
+        {
+            ConnectedDevices.Add(new Device());
+
+            Console.WriteLine("Устройство успешно добавлено!");
+        }
     }
 }
